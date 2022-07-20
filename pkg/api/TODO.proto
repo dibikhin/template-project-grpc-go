@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package TODO;
+
+option go_package = "githab.com/dibikhin/template-project-grpc/pkg/api";
+
+service TODO {
+    rpc TODO (EmptyResponse) returns (EmptyResponse);
+}
+
+message EmptyResponse {}
